@@ -25,8 +25,10 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 				doc.location.href += "#noiframe";
 			}
 			
-			doc.getElementsByClassName("logo mr-1")[0].src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7ktgOAGh3HawAQETZZ4YqYlKciCxYugoyg&s"
-
+			try{
+				doc.getElementsByClassName("logo mr-1")[0].src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7ktgOAGh3HawAQETZZ4YqYlKciCxYugoyg&s"
+			}catch(e){
+			}
 			
 			if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php"){
 				console.log("injecting code");
