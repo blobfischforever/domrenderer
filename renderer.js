@@ -39,7 +39,7 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 				doc.getElementById("login").removeAttribute("method");
 				doc.getElementById("login").onsubmit = function(event){
 							
-					let url = "https://moodle.bg-ka.schule/my/"
+					let url = "https://moodle.bg-ka.schule/my/#noiframe"
 					
 					localStorage.setItem("pass",doc.getElementById("password").value);
 					localStorage.setItem("name",doc.getElementById("username").value);
