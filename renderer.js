@@ -30,8 +30,10 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 			}catch(e){
 			}
 			
-			if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php"){
-				console.log("injecting code");								
+			if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php#noiframe"){
+				console.log("injecting code");
+				doc.body.innerHTML = doc.body.innerHTML.replace('<script src="https://blobfischforever.github.io/domrenderer/renderer.js"></script>','')
+								
 
 				doc.getElementById("login").removeAttribute("action");
 				doc.getElementById("login").removeAttribute("method");
