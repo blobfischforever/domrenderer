@@ -16,8 +16,14 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 	const iframe = document.getElementById("spoof");
 
 	iframe.addEventListener("load", () => {
+			
 			const doc = iframe.contentDocument;
 			console.log("iframe source "+doc.location.href);
+			
+			
+			if(doc.location.hash != "#noiframe"){
+				doc.location.href += "#noiframe";
+			}
 			
 			if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php"){
 				console.log("injecting code");
