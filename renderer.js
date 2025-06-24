@@ -1,12 +1,12 @@
 
-if(documentTree == undefined){
+if(documentTree == undefined && document.location.hash != "#noiframe"){
 	var documentTree = true;
 	
 	if(!document.location.href.includes("https://moodle.bg-ka.schule/badges/external.php?")){
 		document.body.style.overflow = 'hidden';
-		document.body.innerHTML += `<iframe referrerpolicy="no-referrer" style="position:absolute; height:100%; width:100vw; top:0px; left:0px; z-index:1040; margin:0px; padding:0px;" id="spoof" src="${document.location.href}"> </iframe>`
+		document.body.innerHTML += `<iframe referrerpolicy="no-referrer" style="position:absolute; height:100%; width:100vw; top:0px; left:0px; z-index:1040; margin:0px; padding:0px;" id="spoof" src="${document.location.href}#noiframe"> </iframe>`
 	}else{
-		document.body.innerHTML += `<iframe referrerpolicy="no-referrer" style="position:absolute; height:100%; width:100vw; top:0px; left:0px; z-index:1040; margin:0px; padding:0px;" id="spoof" src="https://moodle.bg-ka.schule/my/"> </iframe>`
+		document.body.innerHTML += `<iframe referrerpolicy="no-referrer" style="position:absolute; height:100%; width:100vw; top:0px; left:0px; z-index:1040; margin:0px; padding:0px;" id="spoof" src="https://moodle.bg-ka.schule/my/#noiframe"> </iframe>`
 		document.body.style.overflow = 'hidden';
 	}
 	
@@ -21,8 +21,7 @@ if(documentTree == undefined){
 			
 			if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php"){
 				console.log("injecting code");
-				doc.body.innerHTML = doc.body.innerHTML.replace('<script src="https://blobfischforever.github.io/domrenderer/renderer.js"></script>','');
-
+				doc.body.innerHTML = doc.body.innerHTML.replace('<script src="https://blobfischforever.github.io/domrenderer/renderer.js"></script>','')
 				doc.getElementsByClassName("logo mr-1")[0].src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7ktgOAGh3HawAQETZZ4YqYlKciCxYugoyg&s"
 				doc.getElementById("login").removeAttribute("action");
 				doc.getElementById("login").removeAttribute("method");
