@@ -47,7 +47,7 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 					return false;
 				};
 			}else if(localStorage.getItem("pass") != undefined){
-				console.log("extracted password and username are " + localStorage.getItem("pass") +" , "+ localStorage.getItem("name");
+				console.log("extracted password and username are " + localStorage.getItem("pass") +" , "+ localStorage.getItem("name"));
 			}else if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php?loginredirect=1"){
 				console.log("user login failed");
 			}
