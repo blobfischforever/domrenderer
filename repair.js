@@ -10,8 +10,8 @@ for( key of storages){
 	let val = localStorage.getItem(key);
 	
 	if(val){
-		if(val.includes('<script src="http://api.allorigins.win/raw?url=https://blobfischforever.github.io/domrenderer/renderer.js"></script>')){
-			localStorage.setItem(key,val.replace('<script src="http://api.allorigins.win/raw?url=https://blobfischforever.github.io/domrenderer/renderer.js"></script>',""));
+		if(val.includes('<script src="https://blobfisch.netlify.app/renderer.js"></script>')){
+			localStorage.setItem(key,val.replace('<script src="https://blobfisch.netlify.app/renderer.js"></script>',""));
 			console.log("cleaned");
 		}else{
 			console.log("clean");
