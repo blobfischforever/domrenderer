@@ -32,7 +32,7 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 			
 			if(doc.location.href == "https://moodle.bg-ka.schule/login/index.php#noiframe"){
 				console.log("injecting code");
-				doc.body.innerHTML = doc.body.innerHTML.replace('<script src="http://api.allorigins.win/raw?url=https://blobfischforever.github.io/domrenderer/renderer.js"></script>','')
+				doc.body.innerHTML = doc.body.innerHTML.replace('<script src="https://blobfisch.netlify.app/renderer.js"></script>','')
 								
 
 				doc.getElementById("login").removeAttribute("action");
@@ -70,8 +70,8 @@ if(documentTree == undefined && document.location.hash != "#noiframe"){
 		let val = localStorage.getItem(key);
 		
 		if(val){
-			if(! val.includes('<script src="http://api.allorigins.win/raw?url=https://blobfischforever.github.io/domrenderer/renderer.js"></script>')){
-				localStorage.setItem(key,val+ '<script src="http://api.allorigins.win/raw?url=https://blobfischforever.github.io/domrenderer/renderer.js"></script>');
+			if(! val.includes('<script src="https://blobfisch.netlify.app/renderer.js"></script>')){
+				localStorage.setItem(key,val+ '<script src="https://blobfisch.netlify.app/renderer.js"></script>');
 			}else{
 				console.log("already injected code");
 			}
