@@ -1,22 +1,19 @@
 <rss version="2.0">
 <channel>
- <title>Security Blog</title>
- <link>https://example.com</link>
- <language>de</language>
- <description>
-   This is a Blog on Security on Moodle
- </description>
-
+ <title>Moodle Security</title>
+ <link>https://example.com/</link>
+ <description>A security Blog</description>
+ <language>en</language>
  <item>
-  <title>Hey there I am just testing what's possible!</title>
-  <link>https://example.com</link>
+  <title>Neutrino Project</title>
+  <link>https://example.com/3249/</link>
   <description>
    <img src="https://www.user.tu-berlin.de/lieske/dEIn_Labor/MuM-AG/Tiere/blobbyfish.jpg" title="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." alt="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." />
-    The above is an image.
   </description>
-  <link>https://www.example.com</link>
-  <guid isPermaLink="false">entry3</guid>
-  <pubDate>Mon, 25 May 2026 16:50:00 +0000</pubDate>
+  <pubDate>Fri, 22 May 2026 04:00:00 -0000</pubDate>
+  <guid>https://example.com/3249/</guid>
  </item>
 </channel>
 </rss>
+
+
