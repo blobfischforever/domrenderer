@@ -20,10 +20,11 @@
       <title>Test Number 1</title>
       <link>https://username.github.io/blog/test-1/</link>
       <description>
-        &lt;a onclick="alert('hi')"&gt;a new link&lt;/a&gt;
-
-        &lt;a href="javascript:alert('hi')"&gt;another link&lt;/a&gt;
-        
+        &lt;svg&gt;
+          &lt;script&gt;
+            alert("hello");
+          &lt;/script&gt;
+        &lt;/svg&gt;
       </description>
       <pubDate>Mon, 25 May 2026 12:00:00 +0000</pubDate>
       <guid>https://username.github.io/blog/test-1/</guid>
