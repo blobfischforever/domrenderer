@@ -11,11 +11,22 @@
       <description>
         &lt;p&gt;Hello World! This is my first post.&lt;/p&gt;
         &lt;img src="https://blobfischforever.github.io/domrenderer/stanford-dragon.jpg" alt="Hello World" /&gt;
-
-        &lt;script&gt;alert("hi")&lt;/script&gt;
       </description>
       <pubDate>Mon, 25 May 2026 12:00:00 +0000</pubDate>
       <guid>https://username.github.io/blog/hello-world/</guid>
+    </item>
+
+    <item>
+      <title>Test Number 1</title>
+      <link>https://username.github.io/blog/test-1/</link>
+      <description>
+        &lt;a onclick="alert('hi')"&gt;a new link&lt;/a&gt;
+
+        &lt;a href="javascript:alert('hi')"&gt;another link&lt;/a&gt;
+        
+      </description>
+      <pubDate>Mon, 25 May 2026 12:00:00 +0000</pubDate>
+      <guid>https://username.github.io/blog/test-1/</guid>
     </item>
   </channel>
 </rss>
