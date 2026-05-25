@@ -1,20 +1,44 @@
 <rss version="2.0">
 <channel>
- <title>Moodle Security</title>
- <link>https://blobfischforever.github.io/domrenderer/</link>
- <description>A security Blog</description>
- <language>en</language>
- <item>
-  <title>Neutrino Project</title>
-  <link>https://blobfischforever.github.io/domrenderer/result1</link>
-  <description>
-   <img src="https://blobfischforever.github.io/domrenderer/stanford-dragon.jpg" title="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." alt="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." />
-   and this text
-  </description>
-  <pubDate>Fri, 22 May 2026 04:00:00 -0000</pubDate>
-  <guid>https://blobfischforever.github.io/domrenderer/result1</guid>
- </item>
+<title>xkcd.com</title>
+<link>https://xkcd.com/</link>
+<description>xkcd.com: A webcomic of romance and math humor.</description>
+<language>en</language>
+<item>
+<title>Neutrino Project</title>
+<link>https://xkcd.com/3249/</link>
+<description>
+<img src="https://imgs.xkcd.com/comics/neutrino_project.png" title="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." alt="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." />
+</description>
+<pubDate>Fri, 22 May 2026 04:00:00 -0000</pubDate>
+<guid>https://xkcd.com/3249/</guid>
+</item>
+<item>
+<title>182.8 Meters</title>
+<link>https://xkcd.com/3248/</link>
+<description>
+<img src="https://imgs.xkcd.com/comics/182_8_meters.png" title="They rounded down to 182.8 instead of rounding up to 182.9 because 182.9 might make the statement incorrect." alt="They rounded down to 182.8 instead of rounding up to 182.9 because 182.9 might make the statement incorrect." />
+</description>
+<pubDate>Wed, 20 May 2026 04:00:00 -0000</pubDate>
+<guid>https://xkcd.com/3248/</guid>
+</item>
+<item>
+<title>Particle Census</title>
+<link>https://xkcd.com/3247/</link>
+<description>
+<img src="https://imgs.xkcd.com/comics/particle_census.png" title="Remember, your answers to the physics census are confidential; we will not be issuing Pauli exclusion principle citations." alt="Remember, your answers to the physics census are confidential; we will not be issuing Pauli exclusion principle citations." />
+</description>
+<pubDate>Mon, 18 May 2026 04:00:00 -0000</pubDate>
+<guid>https://xkcd.com/3247/</guid>
+</item>
+<item>
+<title>Speedrun</title>
+<link>https://xkcd.com/3246/</link>
+<description>
+<img src="https://imgs.xkcd.com/comics/speedrun.png" title="Usain Bolt holds the world record in the 100 meter speedrun." alt="Usain Bolt holds the world record in the 100 meter speedrun." />
+</description>
+<pubDate>Fri, 15 May 2026 04:00:00 -0000</pubDate>
+<guid>https://xkcd.com/3246/</guid>
+</item>
 </channel>
 </rss>
-
-
