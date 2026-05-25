@@ -8,7 +8,7 @@
  <item>
   <title>Hey there I am just testing what's possible!</title>
   <description>
-    
+    <script> alert("hi") </script>
   </description>
   <link>www.example.com</link>
   <guid isPermaLink="false">entry0</guid>
