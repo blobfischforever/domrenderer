@@ -11,14 +11,11 @@
   <title>Hey there I am just testing what's possible!</title>
   <link>https://example.com</link>
   <description>
-    <img src="https://www.user.tu-berlin.de/lieske/dEIn_Labor/MuM-AG/Tiere/blobbyfish.jpg"/>
+   <img src="https://www.user.tu-berlin.de/lieske/dEIn_Labor/MuM-AG/Tiere/blobbyfish.jpg" title="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." alt="We definitely put the pool in a mine for shielding. It was absolutely not to hide it from the funding people." />
     The above is an image.
-
-    <img src="https://www.user.tu-berlin.de/lieske/dEIn_Labor/MuM-AG/Tiere/blobbyfish.jpg"></img>
-    The above is an html image.
   </description>
   <link>https://www.example.com</link>
-  <guid isPermaLink="false">entry2</guid>
+  <guid isPermaLink="false">entry3</guid>
   <pubDate>Mon, 25 May 2026 16:50:00 +0000</pubDate>
  </item>
 </channel>
